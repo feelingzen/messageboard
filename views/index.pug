@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h3= title 
+  a(href="/new") new
+  ul
+    each val in messages 
+     li
+      p #{val.text} 
+      i By #{val.user}
+      br
+      strong Added #{val.added}
